@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "Romaguera",
+      "email": "Romaguera@email.com",
+      "phone": "1-770-736-8031",
+      "id": 1
+    },
+    {
+      "name": "Amir",
+      "email": "sulman@email.com",
+      "phone": "131321",
+      "id": 8
+    },
+    {
+      "name": "Adnan",
+      "email": "email@email.com",
+      "phone": "545654",
+      "id": 15
+    }
+  ]
+}

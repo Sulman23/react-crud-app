@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Mulish', sans-serif; */
+}
+.home-title {
+  color: #ec0fcf;
+}
+.home-tagline{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.page-title {
+  color:#ec3f18;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+form div {
+  margin-bottom: 15px;
+}
+form div label {
+  margin-bottom: 5px;
+}
+
+.my-btn {
+  margin-right: 8px;
+}
+
