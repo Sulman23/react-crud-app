@@ -12,12 +12,12 @@ function All() {
   }, []);
 
   const getUser = async () => {
-    const result = await axios.get("http://localhost:3003/users", user);
+    const result = await axios.get("http://localhost:3000/users", user);
     setUser(result.data);
   };
 
   const deleteUser = async (id) => {
-    await axios.delete(`http://localhost:3003/users/${id}`, user);
+    await axios.delete(`http://localhost:3000/users/${id}`, user);
     getUser();
   };
 

@@ -27,7 +27,7 @@ function Edit() {
  
 
     const loadUser = async () => {
-        const result = await axios.get(`http://localhost:3003/users/${id}`, user);
+        const result = await axios.get(`http://localhost:3000/users/${id}`, user);
         setUser(result.data);
     }
 
@@ -37,8 +37,8 @@ function Edit() {
 
     const formSubmit = async (e) => {
         e.preventDefault();
-        await axios.put(`http://localhost:3003/users/${id}`, user);
-        history.push("/all");
+        await axios.put(`http://localhost:3000/users/${id}`, user);
+        history.push("http://localhost:3000/all");
       };
 
     return (
