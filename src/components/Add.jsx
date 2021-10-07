@@ -18,9 +18,8 @@ function Add() {
 
     const formSubmit = async (e) => {
         e.preventDefault();
-        // alert(`Name is ${user.name}`)
-        await axios.post("http://localhost:3000", user);
-        history.push("/all");
+        await axios.post("http://localhost:3003/users", user);
+        history.push("./all");
       };
 
     return (
