@@ -8,8 +8,8 @@
 # testing
 /coverage
 
-# production
-/build
+# production removed for heroku development
+# /build
 
 # misc
 .DS_Store

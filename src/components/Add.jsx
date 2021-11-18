@@ -18,7 +18,9 @@ function Add() {
 
     const formSubmit = async (e) => {
         e.preventDefault();
-        await axios.post("http://localhost:3003/users", user);
+        // await axios.post("?http://localhost:3003/users", user);
+        // for netlify
+        await axios.post("/users", user);
         history.push("./all");
       };
 

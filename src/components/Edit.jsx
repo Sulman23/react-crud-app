@@ -27,7 +27,9 @@ function Edit() {
  
 
     const loadUser = async () => {
-        const result = await axios.get(`http://localhost:3003/users/${id}`, user);
+        // const result = await axios.get(`http://localhost:3003/users/${id}`, user);
+        // for netlify
+        const result = await axios.get(`/users/${id}`, user);
         setUser(result.data);
     }
 
@@ -37,7 +39,9 @@ function Edit() {
 
     const formSubmit = async (e) => {
         e.preventDefault();
-        await axios.put(`http://localhost:3003/users/${id}`, user);
+        // await axios.put(`http://localhost:3003/users/${id}`, user);
+        // for netlify
+        await axios.put(`/users/${id}`, user);
         history.push("/all");
       };
 

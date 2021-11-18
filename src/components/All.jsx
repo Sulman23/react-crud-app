@@ -12,12 +12,16 @@ function All() {
   }, []);
 
   const getUser = async () => {
-    const result = await axios.get("http://localhost:3003/users", user);
+    // const result = await axios.get("http://localhost:3003/users", user);
+    // for netlify
+    const result = await axios.get("/users", user);
     setUser(result.data);
   };
 
   const deleteUser = async (id) => {
-    await axios.delete(`http://localhost:3003/users/${id}`, user);
+    // await axios.delete(`http://localhost:3003/users/${id}`, user);
+    // for netlify
+    await axios.delete(`/users/${id}`, user);
     getUser();
   };
 
