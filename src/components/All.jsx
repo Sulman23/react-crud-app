@@ -13,14 +13,14 @@ function All() {
 
   const getUser = async () => {
     // const result = await axios.get("http://localhost:3003/users", user);
-    // for netlify
+    // for Heroku
     const result = await axios.get("/users", user);
     setUser(result.data);
   };
 
   const deleteUser = async (id) => {
     // await axios.delete(`http://localhost:3003/users/${id}`, user);
-    // for netlify
+    // for Heroku
     await axios.delete(`/users/${id}`, user);
     getUser();
   };
